@@ -1,0 +1,22 @@
+[project]
+name = "real-time-django"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "shokhjahon0126", email = "mardonovshohjahon2006@gmail.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "channels>=4.3.2",
+    "daphne>=4.2.3",
+    "django>=6.1.2",
+    "djangorestframework>=3.18.3",
+]
+
+[project.scripts]
+real-time-django = "real_time_django:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
